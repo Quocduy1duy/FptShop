@@ -1,0 +1,130 @@
+<div class="row   mt-3" style="background-color: #f0f0f0;" >
+    <!-- Carousel  star-->
+    <section class="section-page-nb">
+      <div class="section-page-nb-container">
+        <div class="section-page-nb-img">
+          <img
+            class="section-page-nb-img-item"
+            src="https://images.fpt.shop/unsafe/fit-in/filters:quality(80):fill(transparent)/fptshop.com.vn/Uploads/Originals/2024/1/15/638409390367468503_desk-header%20(5).png"
+            alt=""
+          />
+        </div>
+        <div class="section-page-nb-bot">
+          <div class="section-page-nb-bot-img">
+            <img
+              class="section-page-nb-bot-img-item-1"
+              src="https://fptshop.com.vn/Content/images/tet-2024/img-left.png?v=122111"
+              alt=""
+            />
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="1">
+                  <img src="Image/638398868618527308_H6 - 1190x300.webp" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <img src="Image/638399841018889791_H6 - 1190x300.webp" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="Image/638403060204333680_H6 - 1190x300.webp" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="Image/638403463012455128_desk-header.webp" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="Image/638405243538531469_H6 - 1190x300.webp" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="Image/638405250663224354_H6 - 1190x300.webp" class="d-block w-100" alt="...">
+                </div>
+              </div>
+      
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>    
+           <img
+              class="section-page-nb-bot-img-item-2"
+              src="https://fptshop.com.vn/Content/images/tet-2024/img-left.png?v=122111"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+
+      
+    </section>
+    <section class="section-page-bb" style="background-color: ; align-items: center ;text-align: center;">
+      <div class="container">
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+          <div class="row row-col-sm-12 d-flex  gap-2">
+            <!-- sản phẩm 1 start -->
+            <!-- sắp xếp start -->
+            
+            <!-- sắp xếp end -->
+            
+               <div  ng-repeat="sach in book |filter:{namebook:keyword}|orderBy:sapxep|limitTo:limit:start" class="card border-0 shadow hover  col-sm-3 ms-4" style="width: 18rem; height: 100%; min-height: 390px; "  >
+                
+                 <a href="#!chitiet/{{sach.id}}" class="text-decoration-none align-items-center" style="color: black;" >
+                  <div class="d-flex justify-content-center">
+                    <img src="Image/{{sach.imgbook}}"  alt="..." style="width: 90%; height: 100%; margin-top: 10px;"  class="mx-auto "></div>
+                  <div class="card-body ">
+                    <div class="card-text text-truncate">{{sach.namebook}}</div>
+                    <span style="color: red; font-weight: bold;">{{sach.price-((sach.price*sach.giamphantram)/100)|currency:'':00}}đ</span><span class="badge text-bg-danger ">{{sach.giamphantram}}%</span> <br>
+                    <del style="font-weight: 400;">{{sach.price|currency:'':00}}đ</del> <br>
+                    <small>đã bán <small>{{sach.daban}}</small></small>
+                  </div>
+                  
+                 </a>
+                 
+                 <div class="mb-2"> <button type="button" class="btn btn-primary"><a href="#!chitiet/{{sach.id}}" class="text-decoration-none me-2" style="color: white;">Chi Tiết...</a></button>
+                  <button type="button" class="btn btn-primary" ng-click="addgiohang(sach)">Thêm giỏ hàng</button></div>
+            </div>
+            <div class="ms-2">
+              <button class="btn  btn{{(sapxep=='price')?'':'-outline'}}-primary" ng-click="sapxep='price'">Giá rẻ nhất</button>
+              <button class="btn btn{{(sapxep=='-price')?'':'-outline'}}-primary" ng-click="sapxep='-price'">Giá cao nhất</button>
+              <button class="btn btn{{(sapxep=='namebook')?'':'-outline'}}-primary" ng-click="sapxep='namebook'">Tên A-Z</button>
+              <button class="btn btn{{(sapxep=='-namebook')?'':'-outline'}}-primary" ng-click="sapxep='-namebook'">Tên Z-A</button>
+            </div>
+            
+             <!-- sản phẩm 1 end -->   
+
+
+             <!-- nút phân trang start-->
+             <div class="d-flex justify-content-center" >
+              <nav aria-label="Page navigation example" >
+                <ul class="pagination" >
+                  <li class="page-item">
+                    <button class="page-link {{(page==1)?'disabled':''}}"  aria-label="Previous" ng-click="changePage(page-1)">
+                      <span aria-hidden="true">&laquo;</span>
+                    </button>
+                  </li>
+                  <li class="page-item {{(page==trang)?'active':''}}" ng-repeat="trang in  dsTrang" >
+                    <button class="page-link" ng-click="changePage(trang)">{{trang}}</button>
+                  </li>
+                
+                  <li class="page-item">
+                    <button class="page-link {{(page==totalPage)?'disabled':''}}"  aria-label="Next" ng-click="changePage(page+1)">
+                      <span aria-hidden="true">&raquo;</span>
+                    </button>
+                  </li>
+                </ul>
+              </nav>
+             </div>
+            <!-- nút phân trang end-->
+          </div>
+           
+
+        </div>
+       
+        
+      </div>
+    </section>
+    
+    <!-- Carousel  end-->
+     
+             <!-- danh mục truyện sách end-->

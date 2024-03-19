@@ -1,0 +1,107 @@
+.than{
+    background-color: #f8f9fa;
+    font-size: 14px;
+    margin-top: 30px;
+    margin-left: 20px;
+    }.textheder{
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 1;
+        color: #212529;
+        margin-bottom: 21px;
+    }.text-content{
+        display: flex;
+        line-height: 14px;
+        font-size: 12px;
+        font-weight: 400;
+        color: #4d4d4d;
+        cursor: pointer;
+        width: 100%;
+        margin: 5px;
+        
+    }.than1{
+    margin-top: 52px;    
+    }.btn-style{
+        font-size: 10px;
+        height: 25px;
+        border-color:red ;
+        color: #212529;
+        text-align: center;
+        max-width: 70px;
+        
+    }.card-img{
+        width: 99%;
+        height: 99%;
+    }.card-text{
+        text-align: center;
+    }.btn-group{
+        width: 95%;
+        align-items: center;
+        text-align: center;
+    }.button1{
+        text-align: center;
+        margin: 30px;
+    }.text-img{
+        font-size: 24px;
+        line-height: 32px;
+        font-weight: 500;
+        color: #212529;
+        text-align: center;
+    }.text-img1{
+        font-size: 20px;
+        line-height: 28px;
+        font-weight: 500;
+        color: #cb1c22;
+        text-align: center;
+    }.text-body{
+        border-radius: var(--radius-SM-6px,6px);
+        background: var(--Gray-100,#f8f9fa);
+        padding: 12px 4px;
+        margin-bottom: 16px;
+        margin-left: 4px;
+    
+    }.img-sim{
+        align-items: center;
+        width: 100%;
+    }.footer{
+        margin-left: 30px;
+    }.text-center{
+        align-items: center;
+    }.sim{
+        text-align: center;
+        height: 60px;
+        line-height: 60px;
+        padding: 0 5px;
+    }.sim-body{
+        width: 120px;
+        display: table;
+    }.sim-text{
+        display: table-cell;
+        height: 145px;
+        width: 120px;
+        text-align: center;
+        vertical-align: middle;
+        font-size: 24px;
+        font-weight: 900;
+        color: #fff;
+    }.p-text{
+        font-size: 24px;
+        font-weight: 900;
+        color: #fff;
+    }.sp-text{
+        font-size: 24px;
+        font-weight: 900;
+        color: #fed500;
+    }.si-text{
+        text-align: center;
+        color: #fff;
+        text-decoration: underline;
+    }.decor-ul{
+        list-style: none;
+        display: table;
+        margin-bottom: 15px;
+    }.decor-ul>li{
+        font-size: 12px;
+    }.card-body{
+        margin-left: 19px;
+    }

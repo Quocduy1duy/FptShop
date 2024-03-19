@@ -1,0 +1,46 @@
+<div class="row mt-3">
+    <div class="col-sm-10 offset-1" style="background-color: #ffffff;">
+       <div class="d-flex justify-content-center mb-3 mt-3">
+        <div >
+           <!-- forrm đổi mật khẩu sart -->
+          <form style="width: 500px;" name="formdoimk" ng-submit="DoiMatkhau()">
+            <div class="mb-3">
+              <label class="form-label">Email</label>
+              <input type="email" class="form-control" name="txtemail"  ng-model="email" required>
+              <span ng-show="formdoimk.txtemail.$invalid && formdoimk.txtemail.$touched" style="color: red;">
+                Email không hợp lệ  hoặc không được để trống
+              </span>
+            </div>
+            <div class="mb-3">
+              <label  class="form-label">Mật khẩu cũ</label>
+              <input type="password" class="form-control" name="txtmkcu" ng-model="mkcu" required>
+              <span ng-show="formdoimk.txtmkcu.$invalid && formdoimk.txtmkcu.$touched " style="color: red;">
+                Mật khẩu cũ không được để trống 
+              </span>
+              <span ng-show="mkcu!==Login.password && formdoimk.txtmkcu.$touched " style="color: red;">
+                Mật khẩu cũ không đúng
+              </span>
+            </div>
+            <div class="mb-3">
+              <label  class="form-label">Mật khẩu mới</label>
+              <input type="password" class="form-control" name="txtmkmoi" ng-model="mkmoi" required>
+              <span ng-show="formdoimk.txtmkmoi.$invalid && formdoimk.txtmkmoi.$touched" style="color: red;">
+                Mật khẩu mới không được để trống
+              </span>
+            </div>
+            <div class="mb-3">
+              <label  class="form-label">Xác nhận khẩu mới</label>
+              <input type="password" class="form-control" name="txtxacmkmoi" ng-model="mkxacmkmoi" required>
+              <span ng-show="mkmoi!==mkxacmkmoi && formdoimk.txtxacmkmoi.$touched" style="color: red;">
+                Nhập lại mật khẩu không chính xác
+              </span>
+            </div>
+           
+            <button type="submit" class="btn btn-danger">Đổi mât khẩu</button>
+          </form>
+         <!-- forrm đổi mật khẩu end -->
+        
+        </div>
+       </div>
+    </div>
+  </div>

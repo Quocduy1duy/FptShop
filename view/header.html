@@ -1,0 +1,71 @@
+<a href="#"> <div class="row">
+    
+    <img src="Image/header-bonus-css.png" alt="" style="width: 100%; height: 66px;">
+</div></a>
+
+<div class="header" style="background-color: red; width: 100%;" ng-controller="headerctrl">
+    <img
+      class="image-between-header-1"
+      src="https://fptshop.com.vn/Content/v4/images/new-year-2024/bg-header-1.png
+      "
+      alt=""
+    />
+    <img
+      class="image-between-header-2"
+      src="https://fptshop.com.vn/Content/v4/images/new-year-2024/bg-header-2.png
+      "
+      alt=""
+    />
+    <div class="header-container-cl">
+      <a href="#!home"><div class="logo-header-cl" style="background-image: url(Image/iconhd.png);">
+      </div></a>      
+      <!-- <div class="search-bar-cl">
+        
+        <input
+        
+        type="search"        
+        class="form-control me-1 "  placeholder="Nhập tên máy tính, điện thoại, phụ kiện,... cần tìm" aria-label="Search"
+        style="width: auto;"
+        >
+          
+        <button type="submit">
+          <i class="fas fa-search" class="icon-search"></i>
+        </button>
+      </div> -->
+
+      <form class="d-flex  " role="search" style="width: 520px; border: 1px solid #CDCFD0; border-radius: 5px; " >
+        <input class="form-control  " type="search" placeholder="Search" aria-label="Search" ng-model="keywordseach"> <h1>{{updatekeyword(keywordseach)}}</h1>
+        <button class="btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </form>
+      
+      <div class="menu-have-icon">
+        <i class="fa-regular fa-file-lines icon-menu"></i>
+        <span>Thông tin hay</span>
+      </div>
+      <div class="menu-have-icon">
+        <a class="nav-link"  href="#!tt">
+          <i class="fa-solid fa-file-invoice-dollar icon-menu"></i>
+        <span>Thanh toán & tiện ích</span>
+        </a>
+  
+      </div>
+      <div class="menu-have-icon">
+        <a class="nav-link" href="#!login"><i class="fa-solid fa-circle-user icon-menu"></i>
+        <span>Tài khoản của tôi</span></a>
+        
+      </div>
+      <div class="menu-have-icon">
+        <a class="nav-link" href="#!giohang"><i class="fa-solid fa-cart-shopping icon-menu"></i>
+        <span>Giỏ hàng</span></a>
+        
+      </div>
+      <br>
+    </div>
+  </div>
+  
+  <!-- end header -->
+  
+  <!-- menu -->
+  
+  
+  

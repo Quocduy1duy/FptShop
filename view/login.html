@@ -1,0 +1,80 @@
+<div class="row mt-3">
+    <div class="col-sm-10 offset-1" style="background-color: #ffffff;">
+       <div class="d-flex justify-content-center mb-3 mt-3">
+        <div >
+         <!-- tab star -->
+         <ul class="nav nav-underline mb-3" id="pills-tab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Đăng Nhập</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Đăng ký</button>
+          </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+          <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+            <!-- form đang nhập star -->
+            <form style="width: 500px;" name="formdangnhap" ng-submit="DangNhap()">
+              <div class="mb-3">
+                <label  class="form-label">Email</label>
+                <input type="email" class="form-control"  name="txtemaildn" ng-model="emaildn" required>
+                <span ng-show="formdangnhap.txtemaildn.$invalid && formdangnhap.txtemaildn.$touched" style="color: red;">
+                  Email không hợp lệ  hoặc không được để trống
+                </span>
+              </div>
+              <div class="mb-3">
+                <label  class="form-label">Mật khẩu</label>
+                <input type="password" class="form-control" name="txtmatkhaudn" ng-model="matkhaudn" required>
+                <span ng-show="formdangnhap.txtmatkhaudn.$invalid && formdangnhap.txtmatkhaudn.$touched" style="color: red;">
+                  Mật khẩu không được trống
+                </span>
+              </div>
+               <div><button type="submit" class="btn btn-primary">Đăng nhập</button>
+                <button  class="btn btn-primary"><i class="fa-brands fa-facebook"></i>Đăng nhập bằng Facebook</button>
+              </div>
+            </form>
+            <!-- form đang nhập end -->
+          </div>
+          <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+              <!-- form đang ký star -->
+              <form style="width: 500px;" name="formdangky" ng-submit="dangky()">
+                <div class="mb-3 form-group">
+                  <label class="form-label">Email</label>
+                  <input type="email" class="form-control"  name="txtemail" ng-model="email" required >
+                  <span ng-show="formdangky.txtemail.$invalid && formdangky.txtemail.$touched" style="color: red;">
+                    Email không hợp lệ  hoặc không được để trống
+                  </span>
+                </div>
+                <div class="mb-3">
+                  <label  class="form-label">Mật khẩu</label>
+                  <input type="password" class="form-control" name="txtmatkhau" ng-model="matkhau" required >
+                  <span ng-show="formdangky.txtmatkhau.$invalid && formdangky.txtmatkhau.$touched" style="color: red;">
+                    Mật khẩu không được trống
+                  </span>
+                </div>
+                <div class="mb-3">
+                  <label  class="form-label">Nhập lại mật khẩu</label>
+                  <input type="password" class="form-control" name="txtmatkhau2" ng-model="matkhau2" required>
+                  <span ng-show="matkhau2!==matkhau && formdangky.txtmatkhau2.$touched" style="color: red;">
+                    Mật khẩu nhập lại không đúng 
+                  </span>
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" ng-model="dieukhoan" >
+                  <label class="form-check-label" for="exampleCheck1">Đồng ý điều khoản</label> <br>
+                  <span ng-show="!dieukhoan" style="color: red;">
+                    Chưa đồng ý điều khoản
+                  </span>
+                </div>
+                <button type="submit" class="btn btn-primary">Đăng ký</button>
+              </form>
+              <!-- form đang ký end -->
+          </div>
+        </div>
+         <!-- tab end -->
+        </div>
+       
+
+       </div>
+    </div>
+  </div>

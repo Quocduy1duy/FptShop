@@ -1,0 +1,400 @@
+* {
+  margin: 0 ;
+  padding: 0 !important;
+}
+body {
+  background-color: rgb(203, 20, 20) !important;
+  font-family: Arial, sans-serif;
+}
+
+.margin-page {
+  margin: 25px 0px 25px 0px !important;
+}
+.padding-page {
+  padding: 25px 0px 25px 0px !important;
+}
+/* header bonus */
+.header-bonus {
+  display: flex;
+  justify-content: center;
+}
+.img-header-witdh {
+  width: 1200px;
+}
+.img-header-bonus {
+  width: 100%;
+}
+/* end header bonus */
+
+/* header */
+.header {
+  width: 100%;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image-between-header-1 {
+  position: absolute;
+  left: 0;
+  height: 58px;
+}
+.image-between-header-2 {
+  position: absolute;
+  right: 0;
+  height: 58px;
+}
+.header-container-cl {
+  width: 1200px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.logo-header-cl {
+  /* background-image: url("https://fptshop.com.vn/Content/v4/images/iconhd.png?v=456"); */
+  width: 155px;
+  height: 40px;
+  background-position: -2px -7px;
+  display: inline-block;
+  background-repeat: no-repeat;
+}
+.search-bar-cl {
+  display: flex;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.search-bar-cl input[type="text"] {
+  width: 500px;
+  height: 20px;
+  flex-grow: 1;
+  border: none;
+  outline: none;
+  padding: 10px !important;
+  font-size: 16px !important;
+  background-color: #fff;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.search-bar-cl button {
+  width: 58px;
+  height: 40px;
+  display: inline-block;
+  border: none;
+  background: #333;
+  border-radius: 0 2px 2px 0;
+  cursor: pointer;
+  z-index: 2;
+}
+.search-bar-cl button i {
+  color: #fff;
+  font-size: 25px;
+}
+/* end header */
+
+.menu-have-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 20px;
+  padding: 0 10px;
+  cursor: pointer;
+}
+.icon-menu {
+  font-size: 24px;
+}
+.menu-have-icon i {
+  margin-bottom: 5px;
+}
+
+.menu-have-icon span {
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  line-height: 18px;
+  color: #fff;
+}
+
+/* menu */
+.menu-cl {
+  background-color: #252525;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu-cl-wd {
+  width: 1200px;
+  margin: 0 auto;
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.menu-item-cli {
+  text-transform: uppercase;
+  margin: 0 10px;
+  cursor: pointer;
+}
+.menu-item-cl:hover {
+  text-decoration: underline;
+}
+.menu-icon-cl {
+  font-size: 16px;
+  margin-right: 5px;
+}
+.menu-text-cl {
+  padding-left: 5px;
+  font-size: 14px;
+}
+.x-ngang {
+  transform: rotate(90deg);
+}
+/* end menu */
+
+/* sec page new */
+.section-page-nb {
+  background-image: url("https://images.fpt.shop/unsafe/fit-in/filters:quality(95):fill(transparent)/fptshop.com.vn/Uploads/Originals/2024/1/15/638409390628985545_desk-header-bg%20(3).png");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  height: 660px;
+  display: flex;
+  justify-content: center;
+}
+.section-page-nb-container {
+  width: 1500px;
+}
+.section-page-nb-img {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px !important;
+}
+.section-page-nb-img-item {
+  max-width: 1176px;
+  height: 100%;
+}
+.section-page-nb-bot {
+  margin-top: 20px !important;
+}
+.section-page-nb-bot-img {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.section-page-nb-bot-img-item-1 {
+  width: 152px;
+  animation: swing 1.5s infinite;
+  transform-origin: top center;
+}
+@keyframes swing {
+  0% {
+    transform: rotate(-5deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(-5deg);
+  }
+}
+.section-page-nb-bot-img-item-2 {
+  width: 152px;
+  animation: swing2 1.5s infinite;
+  transform-origin: top center;
+}
+@keyframes swing2 {
+  0% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(5deg);
+  }
+}
+.section-page-nb-bot-carousel {
+  width: 100%;
+  height: 360px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+/* end sec page new */
+
+/* section-page-grid-product */
+.section-page-bb {
+  display: flex;
+  justify-content: center;
+}
+.section-page-grid-product {
+  width: 1200px;
+  background-color: #fff;
+  height: 485px;
+  border-radius: 5px;
+}
+.product-grid {
+}
+/* end section-page-grid-product */
+
+/* footer */
+footer {
+  width: 100%;
+  
+  background-color: #fff;
+}
+
+.footer-wrap-cl {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.footer-wrap-col {
+  width: 1200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.footer-wrap-col-item {
+  width: 19%;
+  min-height: 210px;
+  display: flex;
+  flex-direction: column;
+}
+.wp-item-ft {
+}
+.wp-item-ft-ht {
+  position: relative;
+  top: 15px;
+  list-style: none;
+  line-height: 2.5rem;
+  font-size: 100%;
+  font-weight: 400;
+  vertical-align: baseline;
+  background: 0 0;
+  display: flex;
+  flex-direction: column;
+}
+.wp-item-cont {
+  position: relative;
+  top: 15px;
+  list-style: none;
+  line-height: 2.5rem;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: 0 0;
+}
+.wp-item-ft-cn {
+  position: relative;
+  top: 15px;
+  list-style: none;
+  line-height: 2.5rem;
+  font-size: 100%;
+  font-weight: 400;
+  vertical-align: baseline;
+  background: 0 0;
+}
+.wp-item-ft span {
+  font-size: 15px;
+  font-weight: 600;
+  color: #444b52;
+}
+
+.wp-item-cont-title .cont-img {
+  display: flex;
+}
+.wp-item-cont-title span {
+  padding: 2.5px 0;
+  font-weight: 600;
+  color: #444b52;
+  font-size: 16px;
+}
+.wp-item-cont-title p {
+  color: #444b52;
+  font-size: 13px;
+}
+.wp-item-cont-brand p {
+  color: #444b52;
+  font-size: 13px;
+}
+.wp-item-cont-title img {
+  width: 24px;
+  position: relative;
+  top: 5px;
+}
+.img-brand {
+  max-width: 148px !important;
+}
+.img-brand-2 {
+  max-width: 120px !important;
+}
+.img-brand-3 {
+  max-width: 127px !important;
+}
+.sp-pay {
+  font-size: 15px;
+  font-weight: 600;
+  color: #444b52;
+}
+.wp-item-ft a {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 20px;
+  color: #0664f9;
+  margin-bottom: 18px;
+  text-decoration: none;
+}
+.wp-item-ft img:first-child {
+  max-width: 40px;
+}.carousel-container {
+  width: 300px;
+  overflow: hidden;
+  margin: auto;
+  position: relative;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  min-width: 300px; /* Width of each carousel item */
+  box-sizing: border-box;
+}
+
+/* Optional: Add styling for navigation buttons */
+.carousel-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.carousel-nav button {
+  padding: 5px 10px;
+  cursor: pointer;
+}.cn-img{
+  width: 56px;
+  height: 32px;
+}.img-pay{
+  width: 46px;
+  height: 29px;
+}
+
+
+/* end footer */

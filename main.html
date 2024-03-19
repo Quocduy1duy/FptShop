@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>welcome</title>
+ <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.min.css">
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+ <link rel="stylesheet" href="css/home.css">
+ <link rel="stylesheet" href="css/style.css">
+ <link rel="stylesheet" href="css/data.css">
+
+
+</head>
+<body ng-app="myapp"  ng-controller="myctrl"style="background-color: #f0f0f0;">  
+   <div class="container-fluid" >
+     <header ng-include="'view/header.html'" >    
+    </header>
+     <!-- thanh nav bar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top"  ng-include="'view/nav.html'" >
+      </nav>
+
+      <!-- navbar  end-->
+      <!-- article  star-->
+      <article style="background-color: #f0f0f0;" >
+        <div ng-show="loading" class="position-fixed top-0 bottom-0 start-0 end-0 z-1 text-bg-dark d-flex justify-content-center align-items-center">
+          Đang tải...
+        </div>
+        <div ng-view></div>
+      </article>
+        <!-- article  end-->
+        <!-- footer -->
+        <footer   ng-include="'view/footer.html'">  
+        </footer>
+   </div>
+
+ <script src="angular.min.js"></script>
+ <script src="angular-route.min.js"></script>
+ <script src="js/main.js"></script>
+ <script src="bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+ <script src="https://kit.fontawesome.com/a29a123d1c.js" crossorigin="anonymous"></script>
+ <style>
+  .duy{
+      width: 430px;
+      height: 269px;
+  }.servic-banner{
+      background-image:url(img/banner-bg.png) ;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 50% 100%;
+      margin-bottom: 24px;
+  }.content{
+      color: white;
+  }.text1{
+      margin: 35px;
+  }.layout__item {
+      flex: 1;
+      max-width: calc(33.33% - 16px);
+      min-width: calc(33.33% - 16px);
+  }.card {
+      display: block;
+      border-radius: 4px;
+      box-shadow: 0 1px 4px rgba(10,10,10,.15);
+      background: #fff;
+      overflow: hidden;
+      margin: 3px;
+      height: 120px;
+  }.mt-3{
+      margin: 15px;
+  } header{
+      position: relative;
+  }.img-thumbnail{
+      height: 50px;
+      max-width: 95%;
+  }.f-logo{
+    width: 143px;
+  height: 58px;
+  }.text{
+      font-family: Impact;
+      font-size: 40px;
+      color: white;
+      letter-spacing: 0.3px;
+      text-shadow: 0 0 2px black;
+      padding-bottom: 0px;
+      border-bottom: 1px dotted gray;
+      margin: 0px;
+  }.text2{
+    color: white;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: left;
+    
+  }.text3{
+    color: white;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: left;
+    margin-right:20px ;
+    margin-left: 10px;
+  }
+  .dau{
+    margin-top: 5px;
+      height: 100px;
+      background-color: blue;
+  }.menu{
+      background-color: chocolate;
+  }.text1{
+      margin-top: 5px;
+      letter-spacing: 0.5px;
+  }.trai{
+      height: 300px;
+      background-color: black;
+  }.phai{
+      height: 300px;
+  }.phutto{
+      background-color: brown;
+  }.taikhoan{
+    background-color: yellowgreen;
+    width: 200px;
+  }.poly-card{
+    margin-top: 5px;
+  }.ul{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    font-variant: small-caps;
+  }.img1{
+    
+    background-color: white;
+  }.input{
+    width: 190px;
+    margin-right: px;
+  }.akyder{
+    height: 460px;
+  }
+  
+ 
+</style>
+</body>
+</html>

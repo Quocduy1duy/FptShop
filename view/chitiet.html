@@ -1,0 +1,120 @@
+ <!-- chitiet sản phẩm star -->
+ <div class="row mt-3" >
+    <div class="col-sm-10 offset-1 " style="background-color: #ffffff;>
+          <div class="row">
+           <!-- chi tieết  bên phải star -->
+            <div class="col-sm-5 mt-3 mb-5" >
+                 <div class="row">
+                   
+                   <div class="col-sm-10" style="margin: 2%;">
+                     <img src="Image/{{sach.imgbook}}" alt="" style="width: 388px; height: auto;">
+                   </div>
+                   
+                 </div>
+                 <div class="d-flex  gap-3">
+                  <div class="" style="margin-top: 10px;">
+                    <button type="button" class="btn btn-outline-danger" ng-click="addgiohang2(sach)" ><i class="fa-solid fa-cart-plus me-1"></i>Thêm Vào Giỏ Hàng</button>
+                  <button type="button" class="btn btn-danger" style="width: 220px;">Mua Ngay</button>
+                  </div>
+                  
+                </div>
+            </div>
+             <!-- chi tieết  bên phải end -->
+              <!-- chi tieết  bên trái star -->
+            <div class="col-sm-7 mt-3 mb-5">
+              <h3 >{{ sach.namebook | uppercase }}</h3>
+              <div class="d-flex gap-5">
+                <ul style="list-style: none;">
+                  <li><i class="fa-brands fa-nfc-directional"></i>Nhận ngay khuyến mại đặc biệt</li>
+                  <li><i class="fa-solid fa-circle-check" style="color: #48bb78;"></i>
+                    Giảm ngay 12.000.000đ áp dụng đến 18/02</li>
+                  <li><i class="fa-solid fa-circle-check" style="color: #48bb78;"></i>
+                    Trả góp 0%</li>
+                  <li><i class="fa-solid fa-circle-check" style="color: #48bb78;"></i>
+                    Tặng Samsung Care+ 6 tháng</li>
+                  <li><i class="fa-solid fa-circle-check" style="color: #48bb78;"></i>
+                      Mã gói cước: FLEX69</li>
+
+              </ul>
+             </div>
+             <div class="rating">
+              <span class="star ">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+          </div>
+
+          <div> <span class="fw-bold fs-2 me-1" style="color: red;">{{sach.price-((sach.price*sach.giamphantram)/100)|currency:'':00}}đ</span> <del>{{sach.price|currency:'':00}}đ</del> <span class="ms-1 bg-danger text-white">{{sach.giamphantram}}%</span></div>
+          <!-- Thời gian giao hàng starr -->
+
+          <div><span>Thời gian giao hàng </span> <span class="ms-2 me-2">Giao hàng đến</span> 
+            <!-- trigger modal  star-->
+            <!-- Button trigger modal -->
+<a   data-bs-toggle="modal" data-bs-target="#exampleModal" style="color: blue;">
+Thay Đổi
+</a>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header ">
+  <span class="modal-title fs-5 text-center " id="exampleModalLabel">Chọn địa chỉ giao hàng</span>
+  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+<div class="modal-body">
+  <form action="">
+      <div class="">
+        <label for="province">Tỉnh/Thành Phố</label><select class="form-select" aria-label="Default select example">
+          <option selected>Đà Nẵng</option>
+          <option value="1">Trung quốc</option>
+          <option value="1">Triều Tiên</option>
+        </select>
+      </div>
+      <div class="">
+        <label for="province">Quận/ huyện</label><select class="form-select" aria-label="Default select example">
+          <option selected>Đà Nẵng</option>
+          <option value="1">Trung quốc</option>
+          <option value="1">Triều Tiên</option>
+        </select>
+      </div>
+      <div class="">
+        <label for="province">Phường/Xã</label><select class="form-select" aria-label="Default select example">
+          <option selected>Đà Nẵng</option>
+          <option value="1">Trung quốc</option>
+          <option value="1">Triều Tiên</option>
+        </select>
+      </div>
+  </form>
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
+  <button type="button" class="btn btn-primary">Xác Nhận</button>
+</div>
+</div>
+</div>
+</div>
+            <!-- trigger modal end -->
+          </div>
+           <!-- Thời gian giao hàng end-->
+           <!-- Chính sách đổi trả  star -->
+          <div><span>Chính sách đổi trả  </span> <span class="ms-2 me-2">
+            Đổi trả sản phẩm trong 30 ngày
+            </span> <a    style="color: blue;">
+            Xem thêm
+          </a>
+        </div>
+    <!-- Chính sách đổi trả end-->
+    <!-- Số lượng start -->
+      <div><span class="fs-6" style="font-weight: 500;">Số lượng:</span>
+        <span  class="ms-5 p-1 mt-2"><input type="number"  min="1" ng-model="quantity" pattern="\d*" ></span></div>
+     <!-- Số lượng end -->
+        </div> 
+          <!-- chi tieết  bên trái end -->
+           
+          </div>
+    </div>
+ </div>
+ 
+ <!-- chitiet sản phẩm end -->

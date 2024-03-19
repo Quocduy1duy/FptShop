@@ -1,0 +1,107 @@
+[
+    {
+  "id":1,
+  "imgbook":"638307989548944936_iphone-15-promax-xanh-1.webp",
+  "namebook":"iPhone 15 Pro Max 256GB",
+  "price":"31490000",
+  "giamphantram":10,
+  "daban":502
+  
+},
+{
+    "id":2,
+    "imgbook":"638411327082018867_samsung-galaxy-s24-ultra-dd.webp",
+    "namebook":"Samsung Galaxy S24 Ultra 5G 256GB",
+    "price":"31990000",
+    "giamphantram":27,
+    "daban":994
+    
+  },
+  {
+    "id":3,
+    "imgbook":"638108928863476807_samsung-galaxy-s23-plus-kem-1.webp",
+    "namebook":"Samsung Galaxy S23 Plus 5G 256GB",
+    "price":"17990000",
+    "giamphantram":10,
+    "daban":244
+    
+  },
+  {
+    "id":4,
+    "imgbook":"638108928863476807_samsung-galaxy-s23-plus-kem-1.webp",
+    "namebook":"Xiaomi Redmi Note 13 6GB 128GB",
+    "price":4590000,
+    "giamphantram":10,
+    "daban":502
+    
+  },
+  {
+    "id":5,
+    "imgbook":"638054220350691584_ip-14-pro-max-tim-1.webp",
+    "namebook":"iPhone 14 Pro Max 128GB",
+    "price":27390000,
+    "giamphantram":10,
+    "daban":502
+    
+  },
+  {
+    "id":6,
+    "imgbook":"637957658354316100_samsung-galaxy-z-flip4-tim-1.webp",
+    "namebook":"Samsung Galaxy Z Flip4 5G 128GB",
+    "price":11990000,
+    "giamphantram":20,
+    "daban":502
+    
+  },
+  {
+    "id":7,
+    "imgbook":"637957658354316100_samsung-galaxy-z-flip4-tim-1.webp",
+    "namebook":"Samsung Galaxy Z Flip4 5G 128GB",
+    "price":11990000,
+    "giamphantram":20,
+    "daban":502
+    
+  },{
+    "id":8,
+    "imgbook":"637957658354316100_samsung-galaxy-z-flip4-tim-1.webp",
+    "namebook":"Samsung Galaxy Z Flip4 5G 128GB",
+    "price":11990000,
+    "giamphantram":20,
+    "daban":502
+    
+  },{
+    "id":9,
+    "imgbook":"637957658354316100_samsung-galaxy-z-flip4-tim-1.webp",
+    "namebook":"Samsung Galaxy Z Flip4 5G 128GB",
+    "price":11990000,
+    "giamphantram":20,
+    "daban":502
+    
+  },{
+    "id":10,
+    "imgbook":"637957658354316100_samsung-galaxy-z-flip4-tim-1.webp",
+    "namebook":"Samsung Galaxy Z Flip4 5G 128GB",
+    "price":11990000,
+    "giamphantram":20,
+    "daban":502
+    
+  },{
+    "id":11,
+    "imgbook":"637957658354316100_samsung-galaxy-z-flip4-tim-1.webp",
+    "namebook":"Samsung Galaxy Z Flip4 5G 128GB",
+    "price":11990000,
+    "giamphantram":20,
+    "daban":502
+    
+  },{
+    "id":12,
+    "imgbook":"637957658354316100_samsung-galaxy-z-flip4-tim-1.webp",
+    "namebook":"Samsung Galaxy Z Flip4 5G 128GB",
+    "price":11990000,
+    "giamphantram":20,
+    "daban":502
+    
+  }
+ 
+
+]
